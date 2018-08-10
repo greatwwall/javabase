@@ -9,7 +9,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
 /**
- * @todo
+ * @todo 仅1.7支持twr
  * @author xujun
  * @version 1.0
  * @date 2018年4月5日 下午5:02:55
@@ -18,7 +18,7 @@ import java.nio.channels.FileChannel;
 public class FileCopyIoNio {
 
     public static void fileCopyByIo(String source, String target) throws IOException {
-        try (InputStream in = new FileInputStream(source)) {
+        /*try (InputStream in = new FileInputStream(source)) {
             try (OutputStream out = new FileOutputStream(target)) {
                 byte[] buffer = new byte[4096];
                 int len;
@@ -26,11 +26,11 @@ public class FileCopyIoNio {
                     out.write(buffer, 0, len);
                 }
             }
-        }
+        }*/
     }
 
     public static void fileCopyByNio(String source, String target) throws IOException {
-        try (FileInputStream in = new FileInputStream(source)) {
+        /*try (FileInputStream in = new FileInputStream(source)) {
             try (FileOutputStream out = new FileOutputStream(target)) {
                 FileChannel inChannel = in.getChannel();
                 FileChannel outChannel = out.getChannel();
@@ -41,6 +41,6 @@ public class FileCopyIoNio {
                     buffer.clear();
                 }
             }
-        }
+        }*/
     }
 }

@@ -21,7 +21,7 @@ public class FinalClosure {
     }
 
     public void threadTest() {
-        String str = "java";
+        final String str = "java";
         new Thread(new Runnable() {
             public void run() {
                 for (int i = 0; i < 10; i++) {

@@ -16,7 +16,7 @@ public class CountOfChar {
 
     private CountOfChar() {}
 
-    public static int countWordInFile(String filename, String word)
+/*    public static int countWordInFile(String filename, String word)
             throws FileNotFoundException, IOException {
         int count = 0;
         try (FileReader fr = new FileReader(filename)) {
@@ -32,5 +32,5 @@ public class CountOfChar {
             }
         }
         return count;
-    }
+    }*/
 }
